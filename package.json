@@ -6,6 +6,7 @@
   "workspaces": [
     "packages/*"
   ],
+  "packageManager": "npm@11.6.2",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "turbo run build",
