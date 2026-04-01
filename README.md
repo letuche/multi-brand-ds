@@ -60,7 +60,7 @@ Todos os componentes seguem as diretrizes WCAG 2.1 AA. Testes automatizados com 
 
 **Wrappers para Web Components** — Publicaria versões agnósticas de framework usando a Web Components API, permitindo que times que não usam React consumam os mesmos tokens e a mesma lógica de acessibilidade sem depender do ecossistema React.
 
-**Tokens com suporte a dark/light mode por marca** — A arquitetura atual já suporta múltiplas marcas com facilidade. O próximo passo natural seria adicionar variantes de modo por marca: `aurora-light`, `aurora-dark`, `nebula-light`, `nebula-dark`. Como os tokens semânticos compartilham as mesmas chaves entre marcas, bastaria criar novas entradas no mapa de tokens — a estrutura já está preparada para isso.
+**Tokens com suporte a dark/light mode por marca** — A arquitetura atual já suporta múltiplas marcas com facilidade. Caso desejado, seria possível adicionar facilmente também variantes de modo por marca: `aurora-light`, `aurora-dark`, `nebula-light`, `nebula-dark`. Como os tokens semânticos compartilham as mesmas chaves entre marcas, bastaria criar novas entradas no mapa de tokens — a estrutura já está preparada para isso.
 
 **Style Dictionary** — Migraria os tokens de TypeScript puro para o Style Dictionary, gerando automaticamente saídas em CSS, JSON, iOS e Android a partir de uma única fonte. Isso facilitaria a adoção por times mobile e sincronização com o Figma via plugins de tokens.
 
@@ -69,3 +69,6 @@ Todos os componentes seguem as diretrizes WCAG 2.1 AA. Testes automatizados com 
 **Publicação no npm** — Removeria o `private: true` dos pacotes e configuraria um fluxo de release com Changesets para versionar e publicar `@multi-brand-ds/tokens` e `@multi-brand-ds/react`, permitindo consumo real por projetos externos sem necessidade de estar no mesmo repositório.
 
 **Suporte a `prefers-color-scheme`** — Adicionaria uma opção no `ThemeProvider` para detectar automaticamente a preferência de tema escuro/claro do sistema operacional do usuário, tornando a alternância de marcas mais natural e acessível.
+
+---
+*Letícia Monteiro para Môre (2026)*
