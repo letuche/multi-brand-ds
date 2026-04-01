@@ -2,6 +2,8 @@
 
 Biblioteca de componentes React acessíveis com suporte a múltiplas marcas via design tokens e CSS custom properties.
 
+**[🔗 Ver Storybook](https://letuche.github.io/multi-brand-ds/?path=/docs/introduction--docs)**
+
 ## Marcas
 
 - **Aurora** — Tema claro, inspirado no pôr do sol. Tons quentes de laranja, salmão e creme.
