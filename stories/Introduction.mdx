@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# Multi-Brand Design System
+
+Biblioteca de componentes React acessíveis com suporte a múltiplas marcas via design tokens e CSS custom properties.
+
+## Marcas
+
+O sistema inclui duas marcas com identidades visuais distintas:
+
+- **Aurora** — Tema claro, inspirado no pôr do sol. Tons quentes de laranja, salmão e creme.
+- **Nebula** — Tema escuro, inspirado no cosmos. Tons de índigo, lavanda e teal.
+
+Use o seletor de marca na toolbar acima para alternar entre elas.
+
+## Uso
+
+Adicione o ThemeProvider na raiz do projeto, informando a marca desejada:
+
+```tsx
+import { ThemeProvider, Button, TextInput } from '@multi-brand-ds/react';
+
+<ThemeProvider brand="aurora">
+  <Button variant="primary">Salvar</Button>
+  <TextInput label="Email" placeholder="you@example.com" />
+</ThemeProvider>
+```
+
+## Componentes
+
+- **Button** — Botão com variantes primary e secondary, estados loading e disabled.
+- **TextInput** — Campo de texto com label, hint, mensagem de erro e validação acessível.

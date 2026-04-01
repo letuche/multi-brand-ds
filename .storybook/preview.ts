@@ -3,6 +3,7 @@ import React from 'react';
 import { ThemeProvider } from '../packages/react/src/themes';
 
 const preview: Preview = {
+  tags: ['autodocs'],
   globalTypes: {
     brand: {
       description: 'Marca ativa do Design System',
@@ -27,7 +28,12 @@ const preview: Preview = {
         { brand: context.globals.brand ?? 'aurora' },
         React.createElement(
           'div',
-          { style: { padding: '2rem', minHeight: '100vh' } },
+          {
+          style: {
+            padding: '2rem',
+            ...(context.viewMode !== 'docs' && { minHeight: '100vh' }),
+          },
+        },
           React.createElement(Story),
         ),
       ),
