@@ -20,10 +20,11 @@ export const primitives = {
   nebula_lavender_100: '#EEEDFE', // Text primary — near-white lavender
   nebula_lavender_300: '#AFA9EC', // Text secondary — soft lavender
   nebula_indigo_400: '#6A60CC', // Border — medium indigo
-  nebula_indigo_350: '#7068C8', // Placeholder — lighter indigo
+  nebula_indigo_350: '#8078D4', // Placeholder — ajustado para contraste AA
   nebula_indigo_950: '#1A1535', // Input background
   nebula_teal_400: '#5DCAA5', // Accent/links — bright teal
   nebula_purple_400: '#7F77DD', // Logo accent — purple ring
+  nebula_red_400: '#EF5350', // Error — ajustado para contraste AA em fundo escuro
 
   // ─── Shared status colors ─────────────────────────────────────────
   red_600: '#D32F2F', // Error

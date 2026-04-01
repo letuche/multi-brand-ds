@@ -1,17 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
-import { ThemeProvider } from '../../themes';
 
 const meta: Meta<typeof Button> = {
   title: 'Components/Button',
   component: Button,
-  decorators: [
-    (Story, context) => (
-      <ThemeProvider brand={context.globals.brand ?? 'aurora'}>
-        <Story />
-      </ThemeProvider>
-    ),
-  ],
   argTypes: {
     variant: {
       control: 'select',

@@ -22,7 +22,7 @@ export const nebula = {
   colorPlaceholder: primitives.nebula_indigo_350,
 
   // ─── Status colors ────────────────────────────────────────────────
-  colorError: primitives.red_600,
+  colorError: primitives.nebula_red_400,
   colorSuccess: primitives.green_700,
   colorWarning: primitives.orange_600,
 

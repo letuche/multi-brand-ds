@@ -30,6 +30,8 @@ export function ThemeProvider({
     return {
       ...tokensToCssVars(tokens),
       '--font-family-sans': fontFamily.sans,
+      backgroundColor: tokens.colorSurface,
+      color: tokens.colorTextPrimary,
     };
   }, [brand]);
 
