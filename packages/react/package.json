@@ -1,0 +1,17 @@
+{
+  "name": "@multi-brand-ds/react",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@multi-brand-ds/tokens": "*"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}

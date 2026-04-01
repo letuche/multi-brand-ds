@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+storybook-static/
+.turbo/
+*.tsbuildinfo
+.DS_Store
+debug-storybook.log
