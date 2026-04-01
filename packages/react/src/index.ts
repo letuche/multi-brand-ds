@@ -1,1 +1,9 @@
-export {};
+// Tema
+export { ThemeProvider, useTheme } from './themes';
+export type { ThemeProviderProps, ThemeContextValue } from './themes';
+
+// Componentes
+export { Button } from './components/Button/Button';
+export type { ButtonProps } from './components/Button/Button';
+export { TextInput } from './components/TextInput/TextInput';
+export type { TextInputProps } from './components/TextInput/TextInput';

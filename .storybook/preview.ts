@@ -1,6 +1,46 @@
 import type { Preview } from '@storybook/react';
+import React from 'react';
+import { ThemeProvider } from '../packages/react/src/themes';
 
 const preview: Preview = {
+  tags: ['autodocs'],
+  globalTypes: {
+    brand: {
+      description: 'Marca ativa do Design System',
+      toolbar: {
+        title: 'Brand',
+        icon: 'paintbrush',
+        items: [
+          { value: 'aurora', title: 'Aurora' },
+          { value: 'nebula', title: 'Nebula' },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
+  initialGlobals: {
+    brand: 'aurora',
+  },
+  decorators: [
+    (Story, context) =>
+      React.createElement(
+        ThemeProvider,
+        {
+          brand: context.globals.brand ?? 'aurora',
+          key: context.globals.brand,
+        },
+        React.createElement(
+          'div',
+          {
+          style: {
+            padding: '2rem',
+            ...(context.viewMode !== 'docs' && { minHeight: '100vh' }),
+          },
+        },
+          React.createElement(Story),
+        ),
+      ),
+  ],
   parameters: {
     controls: {
       matchers: {
