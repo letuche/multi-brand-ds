@@ -25,7 +25,10 @@ const preview: Preview = {
     (Story, context) =>
       React.createElement(
         ThemeProvider,
-        { brand: context.globals.brand ?? 'aurora' },
+        {
+          brand: context.globals.brand ?? 'aurora',
+          key: context.globals.brand,
+        },
         React.createElement(
           'div',
           {
